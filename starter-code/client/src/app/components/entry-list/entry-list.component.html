@@ -1,0 +1,11 @@
+<h1>Journal List</h1>
+
+<ul>  
+  <li *ngFor="let entrie of entrieList">
+    Title: {{entrie.title}}
+    Date: {{entrie.date}}
+
+    <button (click)="getToDetails(entrie._id)">See more</button>
+
+  </li>
+</ul>
